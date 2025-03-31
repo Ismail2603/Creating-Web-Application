@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Assighment Part 1"/>
+    <meta name="keywords"    content="HTML, CSS"/>
+    <meta name="author"      content="Ismail Mamedov" />
+    <link rel="stylesheet" href="styles/page3.css">
+    <link rel="shortcut icon" href="images/logo.png">
+    <title>Rubicon International.</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="top">
+                <div class="logo"><a href="#"><img src="images/logo.png" alt="logo"></a></div>
+                <div class="navigation">
+                    <ul>
+                        <li><a href="index.html">Home page </a></li>
+                        <li><a href="jobs.html">Position Descriptions page </a></li>
+                        <li><a href="apply.html">Job application page </a></li>
+                        <li><a href="about.html">About us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="form">
+            <form>
+                <h1>Job application</h1>
+                <input type="text" maxlength="5" minlength="5" placeholder="Reference number..." required>
+                <input type="text" maxlength="20" placeholder="Name..." required>
+                <input type="text" maxlength="20" placeholder="Last name..." required>
+                <input type="date" required>
+                <fieldset>
+                    <legend>Gender</legend>
+                    <input type="radio" id="gender gender1" name="gender"><label for="gender1">Male</label>
+                    <input type="radio" id="gender gender2" name="gender"><label for="gender2">Female</label>
+                    <input type="radio" id="gender gender3" name="gender"><label for="gender3">Other</label>
+                </fieldset>
+                <input type="text" maxlength="40" placeholder="Street address...">
+                <input type="text" maxlength="40" placeholder="Suburb/town...">
+                <select>
+                    <option value="VIC">VIC</option>
+                    <option value="NSW">NSW</option>
+                    <option value="QLD">QLD</option>
+                    <option value="NT">NT</option>
+                    <option value="WA">WA</option>
+                    <option value="SA">SA</option>
+                    <option value="TAS">TAS</option>
+                    <option value="ACT">ACT</option>
+                </select>
+                <input type="number" placeholder="Postcode..." maxlength="4" minlength="4">
+                <input type="email" placeholder="Email...">
+                <input type="number" placeholder="Phone number..." minlength="8" maxlength="12">
+                <h3>Your skills</h3>
+                <div class="checkbox">
+                    <input type="checkbox" id="check1"><label for="check1">Responsible</label>
+                    <input type="checkbox" id="check2"><label for="check2">Reliable</label>
+                    <input type="checkbox" id="check3"><label for="check3">Restitude</label>
+                    <input type="checkbox" id="check4"><label for="check4">Teamwork skills</label>
+                    <input type="checkbox" id="check5"><label for="check5">Time-management skills</label>
+                </div>
+                <textarea placeholder="Other skills..."></textarea>
+                <input type="submit" value="Submit" id="submit">
+            </form>
+        </div>
+    </main>
+
+
+
+</body>
+</html>

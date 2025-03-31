@@ -1,0 +1,120 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: floralwhite;
+    width: 100%;
+    font-family:'Times New Roman', serif;
+    margin: 0px;
+}
+
+header{
+    background: rgb(209, 133, 20);
+    width: 100%;
+}
+
+nav{
+    width: 94%;
+    padding: 0px 3%;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 10%;
+}
+
+.logo img{
+    width: 60px;
+}
+
+.navigation{
+    width: 80%;
+}
+
+.top .navigation ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navigation ul li a{
+    text-decoration: underline;
+    color: #fff;
+    transition: 300ms;
+}
+.navigation ul li a:hover{
+    color: #000;
+}
+
+main{
+    margin-top:  40px;
+    width: 100%;
+    margin-bottom: 40%;
+}
+
+main h1{
+    text-align: center;
+    margin: 60px 20px;
+    color: rgb(4, 162, 0);
+    text-decoration: underline;
+}
+
+ol li {
+  background: none;
+  color: greenyellow;
+  padding: 5px;
+  margin-left: 35px;
+}
+
+main h2{
+    text-align: center ;
+    margin: 30px 10px;
+    color:  rgb(4, 162, 0);
+    text-decoration: unset;
+}
+
+main h3{
+    text-align: left;
+    margin: 20px 10px;
+    color: rgb(4, 162, 0);
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+ul li{
+    background: none;
+    color: red;
+    padding: 5px;
+    margin-left: 35px;
+}
+
+main h4{
+    text-align: left;
+    margin: 20px 10px;
+    color: rgb(4, 162, 0);
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+main p{
+    background: none;
+    color: red;
+    padding: 5px;
+    margin-left: 35px;
+}
+
+footer{
+    width: 100%;
+    padding: 20px 3%;
+    background: rgb(209, 133, 20);
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
