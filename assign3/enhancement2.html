@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Assighment part  1" />
+    <meta name="keywords" content="HTML, CSS, " />
+    <meta name="author" content="Ismail Mamedov" />
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/enhancements.js"></script>
+    <link rel="shortcut icon" href="images/logo.png">
+    <title>Rubicon International </title>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="top">
+                <div class="logo"><a href="#"><img src="./images/logo.png" alt="logo"></a></div>
+                <div class="navigation">
+                    <ul>
+                        <li><a href="index.php">Home page </a></li>
+                        <li><a href="jobs.php">Position Descriptions page</a></li>
+                        <li><a href="apply.php">Job application page</a></li>
+                        <li><a href="about.php">About us</a></li>
+                        <li><a href="enhancement2.html">Enhancement 2</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <div class="enhancement-container">
+            <section class="enhancement-header">
+                <h2>Enhancement No 1</h2>
+                <p>
+                    The first proposed enhancement for the website is to highlight the selected menu to
+                    improve the usability and accessability. So that user will know which part of the page they
+                    are taking actions
+                </p>
+
+            </section>
+            <section class="enhancement-body">
+                <h3>Implementation</h3>
+                <p class="parag">In order to achive this functionality, we need to do follows:</p>
+                <ol class="guide-steps">
+                    <li>import JQUERY library in our header of html</li>
+                    <li>implement functionality to append the class name for active section in our Javascript file. And
+                        trigger the function when page is loaded</li>
+                    <li>create active class in our css file to distinguish navigation menu</li>
+                </ol>
+                <p class="parag">Futher instruction coud be found in the following links:</p>
+                <ul class="guide-steps">
+                    <li><a href="https://api.jquery.com/" target="_blank">JQUERY Api documentation</a></li>
+                    <li><a href="https://stackoverflow.com/questions/26819675/navbar-highlight-for-current-page"
+                            target="_blank">Stackoverflow query (Navbar highlight for current page)</a></li>
+                </ul>
+                <p class="parag">Note: You can find the output of implementation in this <a
+                        href="enhancement2_navigation_highlight.html">Enhancement home, which is
+                        the current active menu is highlighted page</a> </p>
+            </section>
+        </div>
+
+        <div class="enhancement-container">
+            <section class="enhancement-header">
+                <h2>Enhancement No 2</h2>
+                <p>
+                    The second proposed enhancement for the website is to control the time where user will have limited
+                    to to appy. This will improve the user experience.
+                </p>
+
+            </section>
+            <section class="enhancement-body">
+                <h3>Implementation</h3>
+                <p class="parag">In order to achive this functionality, we need to do follows:</p>
+                <ol class="guide-steps">
+                    <li>We need to create startTimer function, where it will count down in our Javascript file. And
+                        trigger the function when page is loaded</li>
+                    <li>Show timer on the HTML file where user applies for the job
+                    </li>
+                    <li>create neccessary class name (we will call it timer)</li>
+                    <li>After time is up user will be promted alert message and redirected to home page</li>
+                </ol>
+                <p class="parag">Futher instruction cound be found in the following links:</p>
+                <ul class="guide-steps">
+                    <li><a href="https://www.w3schools.com/howto/howto_js_countdown.asp" target="_blank">How to create a
+                            countdown timer</a></li>
+                    <li><a href="https://stackoverflow.com/questions/20618355/how-to-write-a-countdown-timer-in-javascript"
+                            target="_blank">Stackoverflow
+                            query(How to write a countdown timer in JavaScript?)</a></li>
+                </ul>
+                <p class="parag">Note: You can find the output of implementation in this <a
+                        href="enhancement2_timer.html">Enhanced job application page</a> </p>
+            </section>
+        </div>
+
+    </main>
+
+    <hr>
+    <footer>
+        <p>Email or contact us for more information:103845097@student.swin.edu.au</p>
+        <br>
+        <a>Contact Number: 0173823277</a>
+    </footer>
+</body>
+
+</html>
