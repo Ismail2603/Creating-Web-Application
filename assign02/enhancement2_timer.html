@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Assighment Part 1" />
+    <meta name="keywords" content="HTML, CSS" />
+    <meta name="author" content="Ismail Mamedov" />
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="images/logo.png">
+    <script src="http://code.jquery.com/jquery-3.5.0.min.js"></script>
+    <script src="scripts/enhancements.js"></script>
+    <script src="scripts/apply.js"></script>
+
+    <title>Rubicon International.</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="top">
+                <div class="logo"><a href="#"><img src="images/logo.png" alt="logo"></a></div>
+                <div class="navigation">
+                    <ul>
+                        <li><a href="index.html">Home page </a></li>
+                        <li><a href="jobs.html">Position Descriptions page </a></li>
+                        <li><a href="apply.html">Job application page </a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="enhancement2.html">Enhancement 2</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="form">
+            <form id="application-form" action="">
+                <h1>Job application</h1>
+                <p class="timer">Application closes in <span id="time">00:00</span> minutes!</p>
+                <input id="reference" type="text" maxlength="5" minlength="5" placeholder="Reference number..."
+                    required>
+                <input id="name" type="text" maxlength="20" placeholder="Name..." required>
+                <input id='lastName' type="text" maxlength="20" placeholder="Last name..." required>
+                <label for="dateOfBirth">Date of birth</label>
+                <input type="date" id="dateOfBirth" required>
+                <label for="dateOfBirth" id="dob-error" class="error-message"></label>
+                <fieldset>
+                    <legend>Gender</legend>
+                    <input type="radio" id="gender1" name="gender" value="gender1"><label id="gender1Label"
+                        for="gender1">Male</label>
+                    <input type="radio" id="gender2" name="gender" value="gender2"><label id="gender2Label"
+                        for="gender2">Female</label>
+                    <input type="radio" id="gender3" name="gender" value="gender3"><label id="gender3Label"
+                        for="gender3">Other</label>
+                </fieldset>
+                <input id="street" type="text" maxlength="40" placeholder="Street address...">
+                <input id="town" type="text" maxlength="40" placeholder="Suburb/town...">
+                <label for="state">Select state</label>
+                <select id="state" aria-label="state">
+                    <option value="VIC">VIC</option>
+                    <option value="NSW">NSW</option>
+                    <option value="QLD">QLD</option>
+                    <option value="NT">NT</option>
+                    <option value="WA">WA</option>
+                    <option value="SA">SA</option>
+                    <option value="TAS">TAS</option>
+                    <option value="ACT">ACT</option>
+                </select>
+                <input type="number" placeholder="Postcode..." maxlength="4" minlength="4" id="postCode">
+                <label for="postCode" id="postCode-error" class="error-message"></label>
+                <input id="email" type="email" placeholder="Email...">
+                <input id="phone" type="number" placeholder="Phone number..." minlength="8" maxlength="12">
+                <h3>Your skills</h3>
+                <div class="checkbox">
+                    <input type="checkbox" name="skillCheckboxes" id="check1"><label for="check1">Responsible</label>
+                    <input type="checkbox" name="skillCheckboxes" id="check2"><label for="check2">Reliable</label>
+                    <input type="checkbox" name="skillCheckboxes" id="check3"><label for="check3">Restitude</label>
+                    <input type="checkbox" name="skillCheckboxes" id="check4"><label for="check4">Teamwork
+                        skills</label>
+                    <input type="checkbox" name="skillCheckboxes" id="check5"><label for="check5">Time-management
+                        skills</label>
+                    <input type="checkbox" name="skillCheckboxes" id="check6"><label for="check6">Other
+                        skills...</label>
+                </div>
+                <textarea id="other-skills" placeholder="Other skills..."></textarea>
+                <label for="other-skills" id="other-skills-error" class="error-message"></label>
+                <input type="submit" value="Submit" id="submit">
+            </form>
+        </div>
+    </main>
+
+
+
+</body>
+
+</html>
